@@ -1,0 +1,440 @@
+:root{
+    --green:#4EE1AD;
+    --black:#151515;
+    --gray:#D9D9D9;
+    --white:#ffffff;
+    --darkGray:#242424;
+}
+/*
+font-family: 'Space Grotesk', sans-serif;
+*/
+body{
+    background-color: var(--black);
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--white);
+    position: relative;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 25px 0;
+    font-weight: bold;
+}
+.nav{
+    display: inline-flex;
+    width: 20%;
+    margin: 0;
+}
+.nav>.ulList{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0;
+}
+.ulList>.iconLi{
+    text-decoration: none;
+    list-style: none;
+    
+}
+.iconLi+.iconLi{
+    margin-left: 15px;
+}
+.icon{
+    color: var(--gray);
+}
+
+.icon:hover{
+    color: var(--green);
+}
+
+.shape{
+    position: absolute;
+    border-radius: 50% ;
+    border: 0.8px solid var(--gray);
+}
+
+.shape1{
+    top: 20px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-50%);
+}
+
+.shape2{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+
+}
+.IntroductionContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 40px;
+}
+
+
+.introdHeadline{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.introductionInfo{
+    width: 50%;
+}
+
+.NameHead{
+    border-bottom: 3px solid var(--green);
+}
+.image{
+    width: 30%;
+    transform: translateX(-50%);
+    z-index: -1;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   border-radius: 20px;
+}
+
+.informationP{
+    font-size: 25px;
+    width: 80%;
+}
+
+.btnContract{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: var(--green) 3px solid;
+
+    transition: 200ms ease-in-out;
+}
+
+.btnContract:hover{
+    color: var(--green);
+}
+
+.mainSkillContainer{
+    position: relative;
+    width: 100%;
+}
+.shskill1{
+    width: 100px;
+    height: 100px;
+}
+
+.shskill2{
+    width: 25px;
+    height: 25px;
+}
+
+.skillsContainer{
+    padding: 40px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 70px;
+}
+
+.skillH{
+    font-size: 30px;
+    margin: 0;
+}
+
+.skillDescription{
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.projectsContainerAll{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.shapeforP{
+    top:1rem;
+    
+}
+
+.projectsHead{
+    font-size: 56px;
+}
+
+.btnP{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.ProjectsSection{
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+    padding: 1rem ;
+    border-radius: 20px;
+}
+
+.ProjectsSection::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.ProjectsSection::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+.ProjectsSection::-webkit-scrollbar-track{
+    background-color: var(--black);
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    min-width: 250px;
+    min-height: 300px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: var(--darkGray);
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+
+    transition: 200ms ease-in-out;
+}
+
+
+.card>img{
+    inline-size: 100%;
+}
+
+.cardLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nameOfcard{
+    font-size: 20px;
+    margin-top: 0;
+    height: 50px;
+}
+
+.btnlink{
+    text-decoration: none;
+    color: var(--gray);
+    border-bottom: 2px solid var(--green);
+    transition: 200ms ease-in-out;
+}
+.btnlink:hover{
+    transform: scale(1.3,1.3);
+    color: var(--green);
+}
+.formContainer{
+    background-color: var(--darkGray);
+}
+
+.contractForm{
+    color: var(--gray);
+    max-width: 500px;
+}
+
+.field{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px dashed var(--gray);
+    margin: 4rem auto 1rem;
+}
+
+
+.input{
+    outline: transparent;
+    border: none;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    padding: 0.25rem 0;
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.field::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--gray);
+    transform: scaleX(0);
+    transform-origin: 0%;
+    transition: transform 500ms ease;
+    top: 2px;
+}
+.field:focus-within{
+    border-color: transparent;
+}
+.field:focus-within::after{
+    transform: scaleX(1);
+}
+
+.label{
+    
+    position: absolute;
+    top: 50%;
+    left:0px;
+    transform: translateY(-50%);
+    transform-origin: 0%;
+    transition:  400ms ease;
+    pointer-events: none;
+}
+
+.input:focus ~ .label,
+.input:not(:placeholder-shown).input:not(:focus)~.label{
+    top: -5px;
+}
+
+/*.input:not(:placeholder-shown)+.label{
+    transform: scale(0.8) translateY(-4rem);
+}*/
+
+.input:valid{
+    color: var(--green);
+}
+.input:invalid{
+    color: orangered;
+}
+
+.formContainer{
+    display: flex;
+    padding: 40px ;
+    justify-content: space-between;
+    margin-top: 70px;
+    border-radius: 20px;
+    position: relative;
+}
+.contractForm{
+    width: 40%;
+}
+.contractDiv{
+    width: 50%;
+    border-right: 2px solid var(--gray);
+}
+
+.formDescription{
+    font-size: 25px;
+}
+
+.btn{
+    height: 40px;
+    font-size: 1.5rem;
+    outline: transparent;
+    background-color: transparent;
+    color: var(--gray);
+    border: transparent;
+    border-bottom: 3px solid var(--green);
+    cursor: pointer;
+    transition:  200ms ease-in-out;
+    margin-top: 20px;
+}
+.btn:hover,.btn:focus{
+    color: var(--green);
+    border-bottom: 4px solid var(--green);
+}
+.techSpan{
+    font-size: 13px;
+    border-radius: 10px;
+    border: solid 0.020rem var(--gray);
+    padding: 5px;
+}
+.techSpan+.techSpan{
+    margin-left: 5px;
+}
+.techsDiv{
+    padding: 10px 0;
+}
+.footer1{
+    margin-top: 50px;
+}
+.bToTop{
+    text-decoration: none;
+    color: var(--white);
+    transition: 200ms ease-in-out;
+}
+.bToTop:hover,.bToTop:focus{
+
+    color: var(--green);
+    transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 1000px){
+    .card:hover,.card:focus{
+        transform: translateY(-1rem);
+    }
+    
+    .card:hover~.card,.card:focus~.card{
+        transform: translateX(130px);
+    }
+    
+    .card:not(:first-child){
+        margin-left: -130px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .formContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contractDiv{
+        border: transparent;
+        width: 90%;
+    }
+    .contractForm{
+        width: 80%;
+    }
+    .ulList{
+        width: 100%;
+    }
+    .nav{
+        width: 50%;
+    }
+    .IntroductionContainer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        transform: translateX(0);
+        width: 50%;
+    }
+    .introductionInfo{
+        width: 90%;
+    }
+    .informationP{
+        width: 100%;
+    }
+}
