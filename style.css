@@ -409,6 +409,12 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .skillH{
+        font-size: 20px;
+    }
+    .projectsHead{
+        font-size: 30px;
+    }
     .contractDiv{
         border: transparent;
         width: 90%;
