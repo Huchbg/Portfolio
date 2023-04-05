@@ -1,5 +1,12 @@
 const Projects = [
   {
+    name: "Sorting Algorithm Visualizer",
+    linkGit: "https://github.com/Huchbg/sorting-algorithm-vizualizer",
+    linkTry: "https://huchbg.github.io/sorting-algorithm-vizualizer/",
+    technologys: ["HTML", "CSS", "TypeScript"],
+    react: true,
+  },
+  {
     name: "EmployeesAndTasks",
     linkGit: "https://github.com/Huchbg/EmployeesAndTasksAPP",
     linkTry: "https://huchbg.github.io/EmployeesAndTasksAPP/",
